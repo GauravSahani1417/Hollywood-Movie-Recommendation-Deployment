@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="shadow p-3 mb-5 bg-white rounded">
+  <h2 style="font-family: Luminari, fantasy;"><a style="color:rgb(10, 14, 20)">Welcome to the Movie recommender!</a></h2>
+  </br>
+  <h3 style="font-family: Luminari, fantasy;"><a style="color:rgb(10, 14, 20)">Please Enter the Hollywood movie you like to get recommendations.</a></h3>
+</div>
+
+  <form action="{{url_for('recommend')}}">
+    <input type="text" name="movie" class="form-control" placeholder="Please Enter the Movie name">
+    <br>
+    <input type="submit" class="btn btn-info" value="Enter">
+  </form>
+{% endblock %}

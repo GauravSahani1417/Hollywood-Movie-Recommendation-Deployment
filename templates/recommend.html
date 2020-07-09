@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  {% if t=='s' %}
+  <div class="shadow p-3 mb-5 bg-white rounded">
+    <h2 style="color:rgb(10, 14, 20)">Sorry!</h2>
+    </br>
+    <h3 style="color:rgb(10, 14, 20)">This Movie "{{movie}}" is not in our Database.</h3>    
+    <h3 style="color:rgb(10, 14, 20)">Please check if you spelled it correct.</h3>
+    <h3 style="color:rgb(10, 14, 20)">Or, try with another movie.</h3>
+    <h3 style="color:rgb(10, 14, 20)">You can Try with movies like:</h3>
+    <h4 style="color:rgb(10, 14, 20)">1)Avatar</h4>
+    <h4 style="color:rgb(10, 14, 20)">2)Frozen</h4>
+    <h4 style="color:rgb(10, 14, 20)">3)Titanic</h4>
+    <h4 style="color:rgb(10, 14, 20)">4)The great gatsby</h4>
+    <h4 style="color:rgb(10, 14, 20)">5)Dragonball: evolution</h4>
+    <h4 style="color:rgb(10, 14, 20)">6)Shrek</h4>
+    <h4 style="color:rgb(10, 14, 20)">7)Tangled</h4>
+    <h4 style="color:rgb(10, 14, 20)">8)Thor: the dark world</h4>
+    <h4 style="color:rgb(10, 14, 20)">9)The chronicles of narnia: prince caspian</h4>
+    <h4 style="color:rgb(10, 14, 20)">10)The polar express</h4>
+  </div>
+  
+  {% else %}
+  <div class="shadow p-3 mb-5 bg-white rounded">
+    <h2 style="color:rgb(45, 99, 255)">"{{movie}}" is a great choice.</h2>
+    <h3 style="font-family: Bahnschrift SemiBold;"><a style="color:rgb(45, 99, 255)">Here are some more Movies, which you should Watch..!</a></h3>
+  </div>
+  
+      <ul class="list-group list-group-flush">
+      {% for m in r %}
+        <li class="list-group-item" style="color:rgb(0, 179, 0)"><strong>{{m|capitalize}}</strong></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+{% endblock %}
+
+
+
+
