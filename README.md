@@ -9,4 +9,7 @@
 ### https://hollywoodmovierecommender.herokuapp.com/
 
 
+## This is How it Works:
+
+![2020-07-10-11-12-15-Trim](https://user-images.githubusercontent.com/63406916/87122607-dd35c300-c2a2-11ea-9fd3-fa2e725b3f3e.gif)
 
