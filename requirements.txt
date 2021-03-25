@@ -78,7 +78,7 @@ pyOpenSSL==19.1.0
 pyparsing==2.4.7
 pyrsistent==0.16.0
 PySocks==1.7.1
-PyYAML==5.3.1
+PyYAML==5.4
 pyzmq==19.0.1
 rope==0.17.0
 s3transfer==0.3.3
