@@ -98,7 +98,7 @@ tornado==6.0.4
 traitlets==4.3.3
 tzlocal==2.1
 ujson==1.35
-urllib3==1.25.9
+urllib3==1.26.5
 validators==0.15.0
 webencodings==0.5.1
 Werkzeug==1.0.1
